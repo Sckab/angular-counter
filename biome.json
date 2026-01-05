@@ -77,7 +77,8 @@
       "lineWidth": 80,
       "attributePosition": "multiline",
       "bracketSameLine": false,
-      "selfCloseVoidElements": "always"
+      "selfCloseVoidElements": "always",
+      "whitespaceSensitivity": "ignore"
     },
     "parser": {
       "interpolation": true
