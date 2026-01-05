@@ -1,9 +1,26 @@
-<header class="flex h-fit items-center justify-between bg-blue-300 p-5 px-24">
-  <span class="text-3xl font-bold text-stone-900">ANGULAR COUNTER</span>
-  <a
-    href="https://github.com/Sckab/angular-counter"
-    class="text-stone-900 hover:underline"
-  >
-    Github Repo
-  </a>
+<header
+  class="flex h-fit items-center justify-between p-5 px-24 bg-blue-300 text-stone-900"
+>
+  <span class="text-3xl font-bold">ANGULAR COUNTER</span>
+  <div class="gap-3 flex">
+    <a
+      href="https://github.com/Sckab/angular-counter"
+      class="hover:underline"
+      target="_blank"
+    >
+      Github Repo
+    </a>
+    <button
+      (click)="toggleTheme()"
+      class="hover:cursor-pointer mt-0.5"
+    >
+      @if (this.themeService.theme === 'light') {
+        <span class="icon-[solar--sun-2-bold]"></span>
+      } @else if (this.themeService.theme === 'dark') {
+        <span class="icon-[solar--moon-bold]"></span>
+      } @else if (this.themeService.theme === 'system') {
+        <span class="icon-[solar--monitor-bold]"></span>
+      }
+    </button>
+  </div>
 </header>
