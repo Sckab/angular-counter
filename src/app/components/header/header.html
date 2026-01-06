@@ -1,8 +1,8 @@
 <header
-  class="flex h-fit items-center justify-between p-5 px-24 bg-blue-300 text-stone-900"
+  class="flex h-fit items-center justify-between bg-blue-300 p-5 px-24 text-stone-900"
 >
   <span class="text-3xl font-bold">ANGULAR COUNTER</span>
-  <div class="gap-3 flex">
+  <div class="flex gap-3">
     <a
       href="https://github.com/Sckab/angular-counter"
       class="hover:underline"
@@ -12,7 +12,7 @@
     </a>
     <button
       (click)="toggleTheme()"
-      class="hover:cursor-pointer mt-0.5"
+      class="mt-0.5 hover:cursor-pointer"
     >
       @if (this.themeService.theme === 'light') {
         <span class="icon-[solar--sun-2-bold]"></span>
