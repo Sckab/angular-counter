@@ -3,23 +3,8 @@
     {{ number }}
   </span>
   <div class="flex gap-2">
-    <button
-      (click)="increment()"
-      class="rounded-md bg-blue-300 p-2 font-bold text-stone-900 hover:cursor-pointer"
-    >
-      INCREMENT
-    </button>
-    <button
-      (click)="reset()"
-      class="rounded-md bg-blue-300 p-2 font-bold text-stone-900 hover:cursor-pointer"
-    >
-      RESET
-    </button>
-    <button
-      (click)="decrement()"
-      class="rounded-md bg-blue-300 p-2 font-bold text-stone-900 hover:cursor-pointer"
-    >
-      DECREMENT
-    </button>
+    <app-button (click)="increment()">INCREMENT</app-button>
+    <app-button (click)="reset()">RESET</app-button>
+    <app-button (click)="decrement()">DECREMENT</app-button>
   </div>
 </div>
